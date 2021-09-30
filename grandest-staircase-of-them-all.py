@@ -20,29 +20,6 @@ Returns: The number of different staircases that can be built from exactly n bri
 
 N = 3
 
-# def get_pairs(n):
-
-#     pairs = set()
-
-#     for i in range(1, n):
-#         print(f'i: {i}, n-i: {n-i}')
-#         pair = tuple(sorted({i, n-i}))
-
-#         if pair not in pairs and len(pair) > 1:
-#             pairs.add(pair)
-
-#     print(pairs)
-
-
-
-# get_pairs(5)
-
-def get_combos_for(n):
-
-    # n == 3, return (1, 2)
-    pass
-
-
 def q(n):
     # Represent polynomial as a list of coefficients from x^0 to x^n.
     # G_0 = 1
@@ -104,26 +81,6 @@ def show_me(g_pow, k, G):
 #Q(10)
 Q(3)
 #Q(200)
-
-def get_partitions(n):
-    result = 1
-
-    # (1 + x**k)
-
-    # loop n times
-    # let k become the power
-    # combine the coefficients
-
-    # (1 + x)(1 + x**1)(1 + x**2)(1 + x**3)(1 + x**4)(1 + x**5)(1 + x**6)
-    # We wish to get the coefficient of x**6
-
-#     for power in range(1, n):
-
-#         (1 + x^pow)
-#         result += (1 + n**power)
-
-#     print(f"result: {result}")
-    return result
 
 get_partitions(10)
 
